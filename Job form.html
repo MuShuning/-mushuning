@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>JOB APPLICATION FORM</title>
+  <style>
+    .bold{ font-weight:bold; font-family: "Arial"}
+    body{ font-family:"Times New Roman"}
+    .title{ font-family:"Bradley Hand"}
+    .under{width:300px;border:none; border-bottom: 1px solid #000;}
+  </style>
+</head>
+<body>
+<h1 align="center" class="title">Job Application Form</h1>
+<p align="right">
+  <label> Date: &nbsp;<input  type="text" name="date" style="border:none; border-bottom: 1px solid #000;"></label></p>
+<form action="＃mushuning" method="post">
+  <fieldset>
+    <legend class="bold">Part 1. APPLICATION INFORMATION</legend>
+    <label>Position Applied for First Choice: <input type="text" required placeholder="Data analyst"> </label>
+    &nbsp;&nbsp;&nbsp;<label>Position Applied for Second Choice: <input type="text" required placeholder="Programmer"></label>
+    <p><label>Salary Expected: <input type="text" required placeholder="000k" ></label>
+      &nbsp;&nbsp;&nbsp;<label>Date Available to Start: <input type="datetime" required placeholder=" "> </label>
+      &nbsp;&nbsp;&nbsp;<label>Work City Expected: <input type="text" required placeholder="Beijing"> </label></p>
+    <p><label>Accommodation Needs: <input type="radio" name="an" value="0" checked>Yes</label>
+      <label><input type="radio" name="an" value="1">No</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend class="bold">Part 2. PERSONAL PARTICULARS</legend>
+    <label>Last Name:  <input type="text" required placeholder="MU"></label>
+    &nbsp;&nbsp;&nbsp;<label>First Name:  <input type="text" required placeholder="SHUNING"></label>
+    &nbsp;&nbsp;&nbsp;<label>Gender: <input type="radio" name="g" value="0" checked>Female</label>
+      <label><input type="radio" name="g" value="1">Male</label>
+    <p><label>Country: <input type="text" required placeholder="China"></label>
+      &nbsp;&nbsp;&nbsp; <label>Date of Birth: <input type="datetime" required placehodler="1999/01/16"></label>
+    <p><label>Marital Status: <input type="radio" name="ms" value="1" checked>Single</label>
+    <label><input type="radio" name="ms" value="2">Married</label> <label><input type="radio" name="ms" value="3">Divorced</label></p>
+    <p><label>E-mail:  <input type="email" required placeholder="1104133589@qq.com"></label>
+      &nbsp;&nbsp;&nbsp;<label>Tell: <input type="tel" required placeholder="79313676513"></label></p>
+    <p><label>Current Address/Postcode: <input type="text" class="under" required placeholder="Lensoveta 23A" ></label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend class="bold">Part 3. EDUCATION & TRAINING</legend>
+    <p><label>Major/Subject: <input type="text" required placeholder=""></label></p>
+    <p>Education Qualification:</p>
+    <ul>
+      <li><input type="radio" name="eq" value="0" checked>Postgraduate</li>
+      <li><input type="radio" name="eq" value="1">Undergraduate</li>
+      <li><input type="radio" name="eq" value="2">Others</li>
+    </ul>
+    Length of Work Experience:
+    <select id="simple" name="lwe">
+      <option>< 1yr</option>
+      <option>1-3 yr</option>
+      <option>> 3 yr</option></select>
+    <p>Brief Description of Work Experience:
+    <p><textarea cols="80" rows="8"></textarea>
+  </fieldset>
+
+  <p>
+    <label><button type="submit" style="float:right; width:120px; height:30px; font-family:'Arial Rounded MT Bold'">Confirm</button></label>&nbsp;&nbsp;&nbsp;
+  </p>
+</form>
+</body>
+</html>
